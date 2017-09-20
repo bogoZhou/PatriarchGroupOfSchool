@@ -1,0 +1,105 @@
+//
+//  PatriarchGroupOfSchool.pch
+//  PatriarchGroupOfSchool
+//
+//  Created by 周博 on 2017/8/29.
+//  Copyright © 2017年 BogoZhou. All rights reserved.
+//
+
+#ifndef PatriarchGroupOfSchool_pch
+#define PatriarchGroupOfSchool_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PatriarchGroupOfSchool_pch */
+
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "BGSDK.h"
+#import "UIView+CountSize.h"
+#import "NSDictionary+ChangeToJson.h"
+#import "NSString+ChangeJsonToDic.h"
+#import <AFNetworking.h>
+#import <MBProgressHUD.h>
+#import <MJRefresh.h>
+#import "AFClient.h"
+#import "BorderHelper.h"
+#import "UIView+FontSize.h"
+#import "ModelHeader.h"
+#import <QuartzCore/QuartzCore.h>
+#import "BaseModel.h"
+#import <UINavigationController+FDFullscreenPopGesture.h>
+
+
+#define kMainStroyboard [UIStoryboard storyboardWithName:@"Main" bundle:nil]
+#define kPublicStroyboard [UIStoryboard storyboardWithName:@"Public" bundle:nil]
+#define kSignStroyboard [UIStoryboard storyboardWithName:@"Sign" bundle:nil]
+#define kModalStroyboard [UIStoryboard storyboardWithName:@"Modal" bundle:nil]
+
+#pragma mark - font 
+#define kPingFangRegularName @"PingFangSC-Regular"
+#define kPingFangMediumName @"PingFangSC-Medium"
+#define kPingFangLightName @"PingFangSC-Light"
+
+//#define kPingFangRegularName @"PingHei-Text"
+//#define kPingFangMediumName @"PingHei-Semibold"
+
+//PingHei-Text
+//PingHei-Semibold
+
+#define kBoy [UIImage imageNamed:@"nanhai"]
+#define kGirl [UIImage imageNamed:@"nvhai"]
+
+
+#pragma mark - 颜色
+
+#define kBlackColor [UIColor blackColor]
+#define kWhiteColor [UIColor whiteColor]
+#define kClearColor [UIColor clearColor]
+#define kPlaceholderColor kColorFrom0x(0xd2d2d2)
+#define kTabBarColor kColorFrom0x(0xc19dfc)
+#define kBlueColor kColorFrom0x(0x007AFF)
+#define kRedColor kColorFrom0x(0xFD5C63)
+#define kRedStartColor kColorFrom0x(0xFF8991)
+#define kGreenColor kColorFrom0x(0x03A699)
+#define kYellowColor kColorFrom0x(0xFABE02)
+
+#define k5e5e5e kColorFrom0x(0x5e5e5e)
+#define k9f9f9f kColorFrom0x(0x9f9f9f)
+#define kd6d6d6 kColorFrom0x(0xd6d6d6)
+#define ke6e6e6 kColorFrom0x(0xe6e6e6)
+#define kc7c7cd kColorFrom0x(0xc7c7cd)
+#define kf2f2f2 kColorFrom0x(0xF6F6F6)
+//#define kfafafa kColorFrom0x(0xfafafa)
+
+
+#define kGroupColor [UIColor groupTableViewBackgroundColor]
+#define kfontSizeVerySmall 12
+#define kfontSizeSmall 15
+#define kfontSizeMiddle 18
+#define kfontSizeLarge 21
+#define kfontSizeVeryLarge 28
+
+#define kfontSizeNumMiddle 17
+
+
+
+
+#pragma mark - 需要记录的值
+
+#define kName [[NSUserDefaults standardUserDefaults] valueForKey:@"name"]
+#define kPassword [[NSUserDefaults standardUserDefaults] valueForKey:@"password"]
+
+//[[NSUserDefaults standardUserDefaults] valueForKey:@"mobile"];
+//[[NSUserDefaults standardUserDefaults] valueForKey:@"creatDate"];
+//[[NSUserDefaults standardUserDefaults] valueForKey:@"userId"];
+//[[NSUserDefaults standardUserDefaults] valueForKey:@"password"];
+//[[NSUserDefaults standardUserDefaults] valueForKey:@"endDate"];
+
+#define kMobile [[NSUserDefaults standardUserDefaults] valueForKey:@"mobile"]
+#define kUserId [[NSUserDefaults standardUserDefaults] valueForKey:@"userId"]
+
+#endif
